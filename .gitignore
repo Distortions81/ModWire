@@ -1,0 +1,33 @@
+  
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# ModWire specific
+*.log
+*.dat
+.env
+#player-data.json
+dbbackups
+*.log
+*.bak
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+*.dat
+ModWire
+.env
+.Profile
+
+
+# Microsoft visual code
+__debug_bin
+
+# Dependency directories (remove the comment below to include it)
+# vendor/

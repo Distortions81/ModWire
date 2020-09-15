@@ -1,0 +1,67 @@
+oct 30th 2019 v0.1:
+	Discord Message "Bot online... test test"
+oct 30th 2019 v0.2:
+	Change channel topic to "Test topic 5"
+oct 30th 2019 v0.3:
+	Test decoding a JSON file, send embed to Discord with thumbnail
+oct 31th 2019 v0.4
+	Set bot status message, remove dashes from changelog, added mod download link
+oct 31th 2019 v0.5:
+	Added loading of mod-list.json files from Factorio, added mod version comparison code.
+oct 31th 2019 v0.6:
+	Added URL fetch for mods.factorio.com, early database read/write
+nov 1st 2019 v0.6.1: (version step change)
+	Changelog / description cleanup code
+nov 1st 2019 v0.6.2:
+	Cut extra changelog lines, add elipse. Subsitute image for no thumbnail. New icon/name 'modwire' instead of "ModBot" / "ModNews", new icon.
+nov 2nd 2019 v0.6.3:
+	Added word-wrap, line-ending work arounds, remove URLs.
+nov 2nd 2019 v0.6.4:
+	Max line length for word-wrap, max title words, code cleanup / comments, debug messages with toggle.
+nov 2nd 2019 v0.6.5:
+	Moved globals and structs to package glob. New database version using base64, with migration. Added $list command for Discord.
+nov 3rd 2019 v0.6.6:
+	Improved $list command.
+nov 3rd 2019 v0.6.7:
+	Added automatic mod download, with username/token from player-data.json, created packages: database and factorio. Created config:DLFolder and PlayerDataLocation
+nov 6th 2019 v0.6.8:
+	$list and $info commands, commands can have arguments. Improved URL decoding/encoding. $help command added Moved lots of code from main.go, and renamed vars/structs/functions for future expansion.
+nov 6th 2019 v0.6.9:
+	$addservmod finished, bhmm.net bot binary updated, direct-message support added, timestamp file added... sleep at start of loop, so we won't spam mod portal by rebooting server. dbsave handler, on seperate thread
+nov 7th 2019 v0.7.0:
+	Whole DB downloading.
+nov 8th 2019 v0.7.1:
+	Search function, timestamps, logfile.
+nov 10th 2019 v0.7.2:
+	 installed mod indication, partial db caching.
+nov 11th 2019 v0.7.3:
+	 database mutexes (2K lines written)
+nov 16th 2019 v0.7.4:
+	File read/write mutexes, proper shutdown procedure, url fetch failure bugfix, buffered database writes.
+nov 17th 2019 v0.7.5:
+	Multi-server code begin, version number added to $stat
+nov 18th 2019 v0.7.6:
+	limit checking added to news/search/mods/guild, guilddb lock
+nov 18th 2019 v0.7.6:
+	guild create/delete/update(join/leave)
+nov 18th 2019 v0.7.8:
+	RWMutexes for better performance.
+nov 18th 2019 v0.7.8d:
+	mutex bug (fixed, bad use of defer blah.Unlock(), inside for loop)
+nov 18th 2019 v0.7.9: dirty flags now have mutexes, and check for dirty status every 5 seconds, then block for 30. Fixed shutdown mutex (dirty flag) and lock order (lock dbs first)
+nov 23rd 2019 v0.8.1:
+	removed news/factorio installed mods/renamed structs / some vars... prep for mutli-server
+nov 23rd 2019 v0.8.2-3:
+	database 0.0.3, small fixes
+nov 29th 2019 v0.8.4:
+	Details fetching, syntax error found. dbdirty status delay 10 seconds.
+nov 29th 2019 v0.8.5:
+	Small logfile fixes. Shutdown locks updated, old locks removed.  Fixed double-datestamp save.
+dec 1st 2019 v0.8.6-7:
+	GuildDB start
+dec 2nd 2019 v0.8.8
+	Moved to github, gdb save/load base done, gdb 0.0.2, displays names on load. Guild updating
+
+
+
+

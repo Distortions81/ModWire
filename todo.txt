@@ -1,0 +1,23 @@
+//recent
+handle discordgo panics
+links for search results
+
+//old
+create role for bot admins
+seperate program for sending mods to bot at some point.
+log name/id/commands to file
+$pending
+mod/guilddb-defrag
+research shards
+factorio blog post updates?
+$refresh command (special ids only)
+$quit/restart command (special ids only)
+$save command (special ids only)
+(maybe in seperate app)
+$downloadmods / $download <mod>
+if mod has no changelog, redirect "read more" to info
+(low priority)
+unzip mod, get info
+news (plaintext) to server chat
+COMMAND COOLDOWN per user/server?
+
