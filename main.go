@@ -71,7 +71,7 @@ func main() {
 func get_guild_members() {
 	support.Log("Building guild member cache.")
 	for x := 0; x < glob.GuildDatabaseLen; x++ {
-		glob.DS.RequestGuildMembers(glob.GuildDatabase[x].ID, "", glob.MaxMembers)
+		glob.DS.RequestGuildMembers(glob.GuildDatabase[x].ID, "", glob.MaxMembers, false)
 	}
 }
 
