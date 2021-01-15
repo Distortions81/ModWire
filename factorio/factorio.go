@@ -155,7 +155,7 @@ func (a byDownload) Swap(i, j int) {
 
 func FetchFactMods(silent bool) (success bool) {
 
-	modurl := "https://mods.factorio.com/api/mods?page_size=max"
+	modurl := "https://mods.factorio.com/api/mods?page_size=1000000"
 	if glob.DEBUG {
 		support.Log("Requesting full mod portal listing", modurl)
 	}
