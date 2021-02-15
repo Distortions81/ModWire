@@ -240,7 +240,7 @@ type RoleFormat struct {
 	Hoist       bool
 	Color       int
 	Position    int
-	Permissions int //bitwise mask
+	Permissions int64 //bitwise mask
 
 	Deleted bool
 }
